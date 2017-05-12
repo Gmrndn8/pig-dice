@@ -13,6 +13,10 @@ $(document).ready(function() {
 
     var temp = $("span#message");
     result += random1;
+    if (random1 === 1) {
+      alert("Sorry you rolled a '1'. Hand over the mouse");
+    }
+
 
     $("span#message").text(random1);
     $("span#thisRound").text(result);
@@ -22,12 +26,13 @@ $(document).ready(function() {
 
       yourscore += result
 
-      $("span#your-score").text(result);
+      $("span#your-score").text(yourscore);
 
       $("span#message").empty();
       $("span#thisRound").empty();
     });
   });
+  result = 0;
   var result1 = 0;
   var yourscore1 = 0;
 
@@ -37,7 +42,10 @@ $(document).ready(function() {
 
     var temp = $("span#message1");
     result1 += random2;
+    if (random2 === 1) {
+      alert("Sorry you rolled a '1'. Hand over the mouse");
 
+    }
     $("span#message1").text(random2);
     $("span#thisRound1").text(result1);
     $("input#endTurn1").click(function() {
@@ -50,4 +58,5 @@ $(document).ready(function() {
       $("span#thisRound1").empty();
     });
   });
+  result1 = 0;
 });
