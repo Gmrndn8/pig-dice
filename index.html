@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pig Dice</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1>Pig Dice</h1>
+    </div>
+    <div class="col-md-6">
+      <div class="player1">
+        <h3>Player1 Area</h3>
+        <input type="button" id="btnSearch" value="Roll"/>
+        <p>Roll Value:<h4><span id="message"></span></h4></p>
+        <p>This round Value:<h4><span id="thisRound"></span></h4></p>
+        <input type="button" id="endTurn" value="End-Turn">
+      </div>
+      <div class="player2">
+        <h3>Player2 Area</h3>
+        <input type="button" id="btnSearch1" value="Roll"/>
+        <p>Roll Value:<h4><span id="message1"></span></h4></p>
+        <p>This round Value:<h4><span id="thisRound1"></span></h4></p>
+        <input type="button" id="endTurn1" value="End-Turn">
+      </div>
+
+    </div>
+    <div class="col-md-6">
+      <div class="score">
+        <h3>Scores</h3>
+        <div class="your-score">
+          <p>Your score will be pasted here.<h4><span id="your-score"></span></h4></p>
+        </div>
+        <div class="opponent-score">
+          <p>The opponent's score will be pasted here.<h4><span id="opponent-score"></span></h4></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
