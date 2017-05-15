@@ -5,7 +5,7 @@
 $(document).ready(function() {
   var result = 0;
   var yourscore = 0;
-  var myarray = [0, 2, 3, 4, 5, 6];
+  var myarray = [1, 2, 3, 4, 5, 6];
   $("input#btnSearch").click(function() {
 
     var random1 = myarray[Math.floor(Math.random() * myarray.length)];
